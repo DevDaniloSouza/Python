@@ -28,3 +28,5 @@ elif jogador == 3:
         print('VOCÊ VENCEU! Você jogou TESOURA e o computador jogou PAPEL.')
     else:
         print('EMPATE! Você jogou TESOURA e o computador jogou TESOURA.')
+else:
+    print('JOGADA INVÁLIDA! Por favor, escolha um número entre 1 e 3.')
