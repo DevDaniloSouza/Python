@@ -1,11 +1,13 @@
+print('Calculando Fatorial...')
 num = int(input('Digite um número e veja seu Fatorial: '))
-res = num
-mult = num -1
+c = num
+fatorial = 1
 
-while mult != 0:
-    print(f'{num}! =', end=' ')
-    print(f'{num}', end=' ')
-    print(f'x {mult}')
-    res *= mult
-    mult -= 1
-print(f'{res}')
+print('Calculando {}! = '.format(num), end='')
+while c > 0:
+    print('{}'.format(c), end='')
+    print(' x ' if c > 1 else ' = ', end='')
+    fatorial *= c
+    c -= 1
+
+print('{}'.format(fatorial))

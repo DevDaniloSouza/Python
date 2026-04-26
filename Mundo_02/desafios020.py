@@ -6,7 +6,10 @@ res = int(input('Digite o seu palpite: '))
 tentativas = 1
 
 while res != num:
-    print('Número errado. Tente novamente.')
+    if res < num:
+        print('Mais... Tente novamente.')
+    else:
+        print('Menos... Tente novamente.')
     res = int(input('Digite o seu palpite: '))
     tentativas += 1
 
