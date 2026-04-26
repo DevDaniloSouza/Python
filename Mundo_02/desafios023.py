@@ -1,11 +1,7 @@
 print('Digite os números para calcular a média...')
 res = int(input("Deseja digitar um número? [1 - Sim / 2 - Não]: "))
 
-numeros = 0
-media = 0
-menor = 0
-maior = 0
-num = 0
+numeros = media = menor = maior = 0
 
 while res == 1:
     num = float(input("Digite um número: "))
