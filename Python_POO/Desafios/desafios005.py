@@ -12,13 +12,17 @@ class Gamer:
         self.games.append(game)
 
     def ficha(self):
-        return Panel(f"Nome real: [blue]{self.nome}[/]\n"
-                     f"Jogos Favoritos:",
-                     title=f'Jogador <{self.nick}>', width=45)
+        conteudo = f"Nome real: [white on blue] {self.nome} [/]"
+        conteudo += f"\nJogos favoritos:"
+        for game in self.games:
+            conteudo += f"\n:video_game: [blue]{game}[/]"
+        painel = Panel(conteudo, title=f'Jogador <{self.nick}>', width=40)
+        print(painel)
+
 
 j1 = Gamer('Danilo Pursino', 'PDS_PLAYER')
 j1.add_favoritos('God of War II')
 j1.add_favoritos('Far Cry 4')
 j1.add_favoritos('Fallout 3')
 j1.add_favoritos('GTA V')
-print(j1.ficha())
+j1.ficha()
