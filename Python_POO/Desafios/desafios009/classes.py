@@ -5,10 +5,14 @@ class BebidaQuente(ABC):
         pass
 
     def preparar(self):
-        pass
+        print(f'--- Iniciando o preparo ---')
+        self.ferver_agua()
+        self.misturar()
+        self.servir()
+        print(f'--- Bebida pronta ---')
     
     def ferver_agua(self):
-        pass
+        print(f'1. Fervendo água a 100° Celcius.')
 
     @abstractmethod
     def misturar(self):
@@ -23,10 +27,10 @@ class Cafe(BebidaQuente):
         super().__init__()
 
     def misturar(self):
-        pass
+        print(f'2. Passando água pressurizada pelo pó de café muído.')
 
     def servir(self):
-        pass
+        print(f'3. Servindo em xícara pequena.')
 
 
 class Cha(BebidaQuente):
@@ -34,10 +38,10 @@ class Cha(BebidaQuente):
         super().__init__()
 
     def misturar(self):
-        pass
+        print(f'2. Mergulhando o sachê de ervas na água.')
 
     def servir(self):
-        pass
+        print(f'3. Servindo na caneca de porcelana com limão.')
 
 
 class Leite(BebidaQuente):
@@ -45,7 +49,7 @@ class Leite(BebidaQuente):
         super().__init__()
 
     def misturar(self):
-        pass
+        print(f'2. Passando vapor pressurizado pelo bico do leite')
 
     def servir(self):
-        pass
+        print(f'3. Servindo na caneca grande, já com café.')
