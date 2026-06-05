@@ -8,6 +8,7 @@ class Poligono(ABC):
     def perimetro(self):
         pass
 
+    @abstractmethod
     def area(self):
         pass
 
