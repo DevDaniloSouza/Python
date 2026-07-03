@@ -5,11 +5,13 @@ class Poligono(ABC):
         self.lado = qtd_lados
 
     @abstractmethod
-    def perimetro(self):
-        pass
+    def perimetro(self) -> float:
+        """Return the perimeter as a float."""
+        raise NotImplementedError()
 
-    def area(self):
-        pass
+    def area(self) -> float:
+        """Return the area as a float."""
+        raise NotImplementedError()
 
 
 class Quadrado(Poligono):
