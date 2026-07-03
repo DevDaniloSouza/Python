@@ -18,6 +18,7 @@ class BebidaQuente(ABC):
     def misturar(self):
         pass
 
+    @abstractmethod
     def servir(self):
         pass
 
