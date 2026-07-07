@@ -12,4 +12,4 @@ class Diario():
             for item in self.__segredos:
                 print(f'- {item}')
         else:
-            print('Senha infromada inválida!')
+            print('Senha informada inválida!')
